@@ -4,7 +4,6 @@
 ## makeCacheMatrix is a function that creates a matrix, stores a list
 ## of functions that act on that matrix, and binds those functions with
 ## their inherent variable values to the matrix object.
-z<-
 makeCacheMatrix <- function(x = matrix()) {
     # upon initialization of the matrix, set the inverse to NULL
     i <- NULL
@@ -24,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
          setinverse = setinverse,
          getinverse = getinverse)
 }
-
 
 ## this function takes a matrix object and first checks to see if an inverse
 ## has already been computed for that object.  If there is an inverse, then this
